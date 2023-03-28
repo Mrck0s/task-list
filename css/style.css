@@ -17,7 +17,8 @@ body{
     height: 80%;
     width: 40%;
     margin: 5% auto;
-    background-color: blue;
+    background-color: rgb(94, 25, 67);
+    box-shadow: 0px 0px 15px 5px;
 }
 .titulo-container{
     display: flex;
@@ -28,12 +29,15 @@ body{
 .titulo-lista{
     font-size: 25px;
     margin: auto;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-decoration: underline 2px wavy;
 }
 .inputs-container{
     display: flex;
     height: 10%;
     width: 100%;
-    background-color: red;
     justify-content: space-around;
 }
 .input{
@@ -41,12 +45,27 @@ body{
     margin: auto 0;
     padding: 0 5%;
     border-style: none;
+    box-shadow: 2px 2px 5px 3px rgb(80, 23, 23);
+}
+.input:focus{
+    outline: none;
 }
 #input-submit{
+    background-color: rgb(102, 217, 233);
     cursor: pointer;
+    transition: all 0.2s;
 }
-.borde{
-    border-radius: 1em;
+#input-submit:hover{
+    transform: scale(1.1);
+}
+.tareas-container{
+    height: 75%;
+    width: 100%;
+}
+/*Estilo de las tareas*/
+
+.tarea{
+    display: none;
 }
 /*Estilo del footer de la pagina*/
 
@@ -74,4 +93,10 @@ body{
     font-size: 1em;
     font-style: italic;
 
+}
+
+/*Estilo de clases genericas*/
+
+.borde-radio{
+    border-radius: 1em;
 }
