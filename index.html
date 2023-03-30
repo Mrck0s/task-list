@@ -16,16 +16,16 @@
                 <div class="titulo-container">
                     <p class="titulo-lista">Tu Lista de Tareas de Hoy</p>
                 </div>
-                <div class="inputs-container">
+                <form class="inputs-container" autocomplete="off">
                     <input type="text" id="input-texto" class="input borde-radio" placeholder="Escribe tu tarea">
                     <input type="submit" value="Añadir" id="input-submit" class="input borde-radio">
-                </div>
-                <div class="tareas-container">
-                    <div class="tarea borde-radio">
-                        <input type="button" value="&#x2713" class="input-tarea borde-radio" id="input-check">
-                        <div class="texto-tarea-container"><p id="texto-tarea">Añadir la primer tarea</p></div>
-                        <input type="submit" value="&#x2715" class="input-tarea borde-radio" id="input-eliminar"> 
+                </form>
+                <div class="lista-tareas-container">
+                    <div class="vacio">
+                        <p class="texto-vacio">No hay tareas pendientes.</p>
                     </div>
+                    <ul class="tareas-lista">
+                    </ul>
                 </div>
             </div>
         </div>
