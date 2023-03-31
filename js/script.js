@@ -10,7 +10,7 @@ btnAdd.addEventListener("click", (e) => {
     const tareaTexto = tareaEntrada.value;
     const li = document.createElement("li");
     const p = document.createElement("p");
-    if (tareaTexto.value != "") {
+    if (tareaTexto.trim() !== "") {
         li.classList.add("tarea");
     li.classList.add("borde-radio");
     p.classList.add("texto-tarea");
@@ -18,11 +18,11 @@ btnAdd.addEventListener("click", (e) => {
     li.appendChild(p);
     li.appendChild(addBtnDelete());
     listaTareas.appendChild(li);
-    tareaEntrada.value = "";
     vacio.style.display = "none";
     } else {
         alert("Escribe la tarea que deseas añadir");
     }
+    tareaEntrada.value = "";
     tareaEntrada.focus();
 })
 
